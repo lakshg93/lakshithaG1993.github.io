@@ -1,15 +1,12 @@
-function LoginAuthentication() {
-    debugger;
-    if($("#username" ).val()!="") {
-        var userName = $("#username").val();
-        var password = $("#password").val();
-        if(userName == "ABCD" && password == "1234"){
+$("#login").submit(function (e) {
+    console.log("submit");
+    e.preventDefault();
+    if($("#username").val() != ""){
+        if($("#username").val() == "ABCD" && $("#password").val() == "1234"){
             window.location.replace("mainPage.html");
-        } else {
-            //window.location.replace("index.html");
         }
     }
-    else {
+    else{
         window.location.replace("index.html");
     }
-}
+})
