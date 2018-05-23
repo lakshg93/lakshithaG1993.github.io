@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Smart Oil Lamp Website</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/logo1.png" alt="logo"></a>
+
+			<ul>
+				<li class="selected">
+					<a>Smart IoT Lamp</a>
+				</li>
+				<!--li>
+					<a href="subdivisions.html">Subdivisions</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li-->
+			</ul>
+		</div>
+	</div>
+	<div id="body" class="home">
+		<h1 onclick="proceedButtonClicked(this)"><img class = "proceedButton" src="images/proceed.png" alt=""></h1>
+		<h1 onclick="restartButtonClicked(this)"><img class = "restartButton" src="images/restart-1.png" alt=""></h1>
+
+		<iframe class = "youtube" width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCIbWt7WF_pCVR-0K_21A-jQ" frameborder="0" allowfullscreen></iframe>
+			<div class="parent">
+
+				<img class = "image1" src="images/tree.jpg" alt="">
+				<h1 onclick="lamp1Clicked(this)" id = "lamp1Place"><img class = "lamp1a" src="images/candle1.png" alt=""></h1>
+				<h1 onclick="lamp2Clicked(this)" id = "lamp2Place"><img class = "lamp2a" src="images/candle1.png" alt=""></h1>
+				<h1 onclick="lamp3Clicked(this)" id = "lamp3Place"><img class = "lamp3a" src="images/candle1.png" alt=""></h1>
+				<h1 onclick="lamp4Clicked(this)" id = "lamp4Place"><img class = "lamp4a" src="images/candle1.png" alt=""></h1>
+				<h1 onclick="lamp5Clicked(this)" id = "lamp5Place"><img class = "lamp5a" src="images/candle1.png" alt=""></h1>
+			</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>
+				&#169; Lakshitha Gunasekara. All Rights Reserved.
+			</p>
+			<div class="connect">
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a> <a href="http://www.freewebsitetemplates.com/misc/contact" id="contact">contact</a> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+
+	<script src="js/candleClick.js"></script>
+	<script src="js/mqttMessage.js"></script>
+<audio controls autoplay="autoplay">
+	<source src="music.ogg" type="audio/ogg">
+	<source src="music.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
