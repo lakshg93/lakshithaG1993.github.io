@@ -3,8 +3,8 @@
 createMQTTConnection();
 
 function createMQTTConnection(){
-    client = new Paho.MQTT.Client("iot.eclipse.org",80,"/ws","clientId");
-
+    //client = new Paho.MQTT.Client("iot.eclipse.org",80,"/ws","clientId");
+    client = new Paho.MQTT.Client("wss://iot.eclipse.org:443/ws", "clientId");
 // set callback handlers
     client.onConnectionLost = onConnectionLost;
     client.onMessageArrived = onMessageArrived;
