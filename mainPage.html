@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+		type="text/javascript"></script>
 	<div id="header">
 		<div>
 			<a href="index.html" id="logo"><img src="images/logo1.png" alt="logo"></a>
@@ -31,7 +33,25 @@
 		<h1 onclick="restartButtonClicked(this)"><img class = "restartButton" src="images/restart-1.png" alt=""></h1>
 
 		<iframe class = "youtube" width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCIbWt7WF_pCVR-0K_21A-jQ" frameborder="0" allowfullscreen></iframe>
-			<div class="parent">
+		<div id = "candlePlaceholderDiv"></div>
+
+		<script>
+            function loadlink(){
+                $('#candlePlaceholderDiv').load('candleDiv.php',function () {
+                    $(this).unwrap();
+                });
+
+                console.log("Refresh");
+            }
+
+            loadlink(); // This will run on page load
+            setInterval(function(){
+                loadlink() // this will run after every 5 seconds
+            }, 5000);
+		</script>
+
+
+		<!--div class="parent">
 
 				<img class = "image1" src="images/tree.jpg" alt="">
 				<h1 onclick="lamp1Clicked(this)" id = "lamp1Place"><img class = "lamp1a" src="images/candle1.png" alt=""></h1>
@@ -39,7 +59,7 @@
 				<h1 onclick="lamp3Clicked(this)" id = "lamp3Place"><img class = "lamp3a" src="images/candle1.png" alt=""></h1>
 				<h1 onclick="lamp4Clicked(this)" id = "lamp4Place"><img class = "lamp4a" src="images/candle1.png" alt=""></h1>
 				<h1 onclick="lamp5Clicked(this)" id = "lamp5Place"><img class = "lamp5a" src="images/candle1.png" alt=""></h1>
-			</div>
+			</div-->
 	</div>
 	<div id="footer">
 		<div>
