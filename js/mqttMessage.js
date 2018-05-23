@@ -26,7 +26,7 @@ function onConnect() {
 
 function onConnectSubscribe() {
     // Once a connection has been made, make a subscription and send a message.
-    client.subscribe("lampIIHL-receive");
+    client.subscribe("IIHL/test1/uom/entc");
 }
 
 function onConnectPublish(messageString) {
