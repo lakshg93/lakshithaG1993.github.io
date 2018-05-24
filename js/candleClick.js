@@ -1,12 +1,12 @@
 function lamp1Clicked(id) {
     id.innerHTML = '<img class = "lamp1" src="images/candle2.png" alt="">';
     //createMQTTConnection();
-    onConnectPublish("5");
+    onConnectPublish("1");
 }
 function lamp2Clicked(id) {
     id.innerHTML = '<img class = "lamp2" src="images/candle2.png" alt="">';
     //createMQTTConnection();
-    onConnectPublish("4");
+    onConnectPublish("2");
 }
 function lamp3Clicked(id) {
     id.innerHTML = '<img class = "lamp3" src="images/candle2.png" alt="">';
@@ -17,13 +17,13 @@ function lamp3Clicked(id) {
 function lamp4Clicked(id) {
     id.innerHTML = '<img class = "lamp4" src="images/candle2.png" alt="">';
     //createMQTTConnection();
-    onConnectPublish("2");
+    onConnectPublish("4");
     //mqttPublish("4");
 }
 function lamp5Clicked(id) {
     id.innerHTML = '<img class = "lamp5" src="images/candle2.png" alt="">';
     //createMQTTConnection();
-    onConnectPublish("1");
+    onConnectPublish("5");
 
 }
 function restartButtonClicked(id) {
