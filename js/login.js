@@ -2,7 +2,7 @@ $("#login").submit(function (e) {
     console.log("submit");
     e.preventDefault();
     if($("#username").val() != ""){
-        if($("#username").val() == "ABCD" && $("#password").val() == "1234"){
+        if($("#username").val() == "UserIIHL" && $("#password").val() == "pwIIHL"){
             window.location.replace("mainPage.html");
         }
     }
