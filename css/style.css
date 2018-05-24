@@ -42,64 +42,64 @@ p a:hover {
 .image1 {
 	position: relative;
 	top:0;
-	left: 0;
+	left: 10px;
 }
 
 .lamp1 {
 	position: absolute;
 	top: 350px;
-	left: 345px;
+	left: 355px;
 }
 .lamp2 {
 	position: absolute;
 	top: 275px;
-	left: 545px;
+	left: 555px;
 }
 .lamp3 {
 	position: absolute;
 	top: 227px;
-	left: 765px;
+	left: 775px;
 }
 .lamp4 {
 	position: absolute;
 	top: 170px;
-	left: 995px;
+	left: 1005px;
 }
 .lamp5 {
 	position: absolute;
 	top: 130px;
-	left: 1195px;
+	left: 1205px;
 }
 
 .lamp1a {
 	position: absolute;
 	top: 398px;
-	left: 341px;
+	left: 351px;
 }
 .lamp2a {
 	position: absolute;
 	top: 323px;
-	left: 541px;
+	left: 551px;
 }
 .lamp3a {
 	position: absolute;
 	top: 275px;
-	left: 761px;
+	left: 771px;
 }
 .lamp4a {
 	position: absolute;
 	top: 218px;
-	left: 991px;
+	left: 1001px;
 }
 .lamp5a {
 	position: absolute;
 	top: 178px;
-	left: 1191px;
+	left: 1201px;
 }
 .youtube{
 	position: absolute;
 	top:700px;
-	left:800px;
+	left:700px;
 	z-index: 1;
 }
 .restartButton{
@@ -499,45 +499,7 @@ p a:hover {
 	text-decoration:none;
 	text-indent:10px;
 }
-#body.blog .sidebar ul li span {
-	display:block;
-	padding:0 0 0 50px;
-}
-#body.blog .sidebar ul li span a {
-	color:#a3a3a3;
-	font-size:12px;
-	letter-spacing:.05em;
-	line-height:24px;
-	text-decoration:none;
-}
-#body.home .blog div h3 a, #body.home .article div h3 a, #body.home .news div h3 a, #body.subdivisions ul li div h3 a {
-	color:#1bb5ac;
-	text-decoration:none;
-}
-#body.home .blog div h3 a:hover, #body.home .article div h3 a:hover, #body.home .news div h3 a:hover, #body.subdivisions ul li div h3 a:hover, #body.contact h3 a:hover, #body.blog > div:first-child > ul > li > div h3 a:hover {
-	text-decoration:underline;
-}
-#body.subdivisions ul, #body.blog > div:first-child > ul {
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-#body.subdivisions ul li div h3, #body.about h3 {
-	color:#e49e06;
-	font-family:anticregular;
-	font-size:20px;
-	font-weight:400;
-	letter-spacing:.05em;
-	line-height:24px;
-	margin:14px 0 0;
-}
-#body.subdivisions ul li > a img:hover, #body.blog > div:first-child > ul > li > a img:hover {
-	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
-	opacity:0.9;
-}
-#body.blog > div:first-child > ul.paging li.selected a, #body.blog .sidebar ul li > a:hover, #body.blog .sidebar ul li span a:hover {
-	color:#e49e06;
-}
+
 /*------------------------- Footer ------------------------*/
 #footer {
 	background:url(../images/bg-footer.png) repeat-x;
@@ -566,16 +528,4 @@ p a:hover {
 	margin:0 0 0 28px;
 	text-indent:-99999px;
 	width:30px;
-}
-#footer div .connect a#googleplus {
-	background:url(../images/icons.png) no-repeat 0 0;
-}
-#footer div .connect a#contact {
-	background:url(../images/icons.png) no-repeat -31px 0;
-}
-#footer div .connect a#facebook {
-	background:url(../images/icons.png) no-repeat -62px 0;
-}
-#footer div .connect a#twitter {
-	background:url(../images/icons.png) no-repeat -93px 0;
 }
